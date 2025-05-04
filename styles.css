@@ -96,10 +96,11 @@ a.destaque{
 }
 
 .view-more .view-more__content {
-    max-height: 300px;
+    max-height: auto;
     overflow: hidden;
     margin-bottom: 8px;
     position: relative;
+    transition: max-height 0.5s ease-in-out; /* Adiciona efeito suave de abertura */
 }
 
 .view-more .view-more--expand .view-more__content {
@@ -111,8 +112,9 @@ a.destaque{
     bottom: 0;
     position: absolute;
     width: 100%;
-    height: 162px;
-    background: linear-gradient(0deg, goldenrod 33.08%, rgba(255, 255, 255, 0.00) 69.54%);
+    height: 120px;
+    background: linear-gradient(0deg, rgba(218, 165, 32, 0.8) 10%, rgba(255, 255, 255, 0) 90%);
+    transition: opacity 0,5s ease-in-out;
 }
 
 .view-more:not(.view-more--expand) .view-more-collapse {
@@ -136,4 +138,12 @@ a.destaque{
     font-style: normal;
     font-weight: 700;
     cursor: pointer;
+}
+
+.view-more .links li:nth-child(n+3) { 
+    display: none; /* Oculta todos a partir do terceiro */
+}
+
+.view-more.view-more--expand .links li:nth-child(n+3) { 
+    display: block; /* Mostra todos ao expandir */
 }

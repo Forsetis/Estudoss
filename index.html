@@ -42,10 +42,10 @@
         <!-- Parte dos links -->
         
         <div class="view-more">
-            <div class="view-more__content">
+            <div>
                 <div class="links"
                     alt="alguns links para teste, sendo os dois primeiros funcionais e os outros dois ainda adquirirão alguma função.">
-                    <ul>
+                    <ul class="view-more__content">
                         <li><a href="../Estudoss/Testes/units.html"><span>&#128511;</span> <span class="links__item"> Unidades
                                     de
                                     Medida</a></span></li>
@@ -55,26 +55,19 @@
                         <li><a href="../Pokedex/"><span>&#128511;</span> <span class="links__item">Pokedex</a></span></li>
                         <li><a href="../Estudoss/Testes/TesteDom.html"><span>&#128511;</span> <span class="links__item">Teste
                                     DOM</a></span></li>
-                        <li><a href="../Testes/main.html">View More</a></li>
+                        <li><a href="../Testes/main.html"><span>&#128511;</span> <span class="links__item">View More</a></span></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="view-more__actions">
-            <button class="view-more-expand">Mostrar Mais</button>
-            <button class="view-more-collapse">Mostrar Menos</button>
+            <!-- <button class="view-more-expand">Mostrar Mais</button> -->
+            <!-- <button class="view-more-collapse">Mostrar Menos</button> -->
+            <button class="view-more-toggle">Mostrar Mais</button>
         </div>
         <div class="like-button" role="button" aria-label="Curtir este conteúdo">Curtir</div>
     </div>
 
-<script>
-    const viewMoreButtons = document.querySelectorAll('.view-more-expand, view-more-collapse');
-    viewMoreButtons.forEach(button => {
-        button.onclick = (event) => {
-            const holder = button.parentElement.parentElement;
-            holder.classList.toggle('view-more--expand');
-        }
-    });
-</script>
+<script src="./ViewMoreButton.js"></script>
 </body>
 </html>

@@ -40,24 +40,41 @@
 
         </div>
         <!-- Parte dos links -->
-        <div class="links"
-            alt="alguns links para teste, sendo os dois primeiros funcionais e os outros dois ainda adquirirão alguma função.">
-            <ul>
-                <li><a href="../Estudoss/Testes/units.html"><span>&#128511;</span> <span class="links__item"> Unidades
-                            de
-                            Medida</a></span></li>
-                <li><a href="../Estudoss/Testes/bootstrap.html"><span>&#128511;</span> <span class="links__item"> Html
-                            com o
-                            bootstrap</a></span></li>
-                <li><a href="../Pokedex/"><span>&#128511;</span> <span class="links__item">Pokedex</a></span></li>
-                <li><a href="../Estudoss/Testes/TesteDom.html"><span>&#128511;</span> <span class="links__item">Teste
-                            DOM</a></span></li>
-            </ul>
+        
+        <div class="view-more">
+            <div class="view-more__content">
+                <div class="links"
+                    alt="alguns links para teste, sendo os dois primeiros funcionais e os outros dois ainda adquirirão alguma função.">
+                    <ul>
+                        <li><a href="../Estudoss/Testes/units.html"><span>&#128511;</span> <span class="links__item"> Unidades
+                                    de
+                                    Medida</a></span></li>
+                        <li><a href="../Estudoss/Testes/bootstrap.html"><span>&#128511;</span> <span class="links__item"> Html
+                                    com o
+                                    bootstrap</a></span></li>
+                        <li><a href="../Pokedex/"><span>&#128511;</span> <span class="links__item">Pokedex</a></span></li>
+                        <li><a href="../Estudoss/Testes/TesteDom.html"><span>&#128511;</span> <span class="links__item">Teste
+                                    DOM</a></span></li>
+                        <li><a href="../Testes/main.html">View More</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-
+        <div class="view-more__actions">
+            <button class="view-more-expand">Mostrar Mais</button>
+            <button class="view-more-collapse">Mostrar Menos</button>
+        </div>
         <div class="like-button" role="button" aria-label="Curtir este conteúdo">Curtir</div>
-
     </div>
-</body>
 
+<script>
+    const viewMoreButtons = document.querySelectorAll('.view-more-expand, view-more-collapse');
+    viewMoreButtons.forEach(button => {
+        button.onclick = (event) => {
+            const holder = button.parentElement.parentElement;
+            holder.classList.toggle('view-more--expand');
+        }
+    });
+</script>
+</body>
 </html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View More</title>
+    <link rel="stylesheet" href="./viewmore.css">
+</head>
+<body>
+    <div class="container">
+        <h1>View More</h1>
+
+        <div class="view-more">
+            <div class="view-more__content">
+                <p>Lorem ipsum dolor sit amet,
+                    consectetura dipis cingelit.Vestibulum viverra est et suscipit venenatis. 
+                    Ut nec ultricies lectus, et dapibus nulla. Aliquam eu erat ullam corper, semper sema, 
+                    tinci dunt urna. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+            </div>
+            <div class="view-more__actions">
+                <button class="view-more-expand">Mostrar Mais</button>
+                <button class="view-more-collapse">Mostrar Menos</button>
+            </div>
+        </div>
+    </div>
+    
+<script>
+    const viewMoreButtons = document.querySelectorAll('.view-more-expand, .view-more-collapse');
+        
+    viewMoreButtons.forEach(button => {
+        button.onclick = (event) => {
+            const holder = button.parentElement.parentElement;
+            holder.classList.toggle('view-more--expand');
+        }
+    });
+</script>
+</body>
+</html>

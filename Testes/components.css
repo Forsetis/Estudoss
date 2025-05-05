@@ -1,0 +1,99 @@
+html, body {
+    font-family: sans-serif;
+}
+
+html * {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 980px;
+    width: 100%;
+    padding: 0, 10px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Styling do ViewMore */
+.view-more {
+    margin-bottom: 56px;
+}
+
+.view-more .view-more__content {
+    max-height: 300px;
+    overflow: hidden;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.view-more .view-more--expand .view-more__content {
+    max-height: unset;
+}
+
+.view-more:not(.view-more--expand) .view-more__content::after {
+    content: "";
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(0deg, #fff 33.08%, rgba(255, 255, 255, 0.00) 69.54%);
+}
+
+.view-more:not(.view-more--expand) .view-more-collapse {
+    display: none;
+}
+.view-more.view-more--expand .view-more-expand {
+    display: none;
+}
+
+.view-more .view-more__actions {
+    text-align: center;
+    width: 100%;
+}
+
+.view-more .view-more__actions button {
+    color:goldenrod;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Styling do Accordion */
+.accordion {
+    border-bottom: solid 2px #bfbfbf; /* Borda Inferior para separar os accordions */
+}
+
+.accordion summary {
+    color: #324054; /*Cor do titulo de accordion fechado*/
+    font-size: 20px; /*Tamanho da fonte*/
+    font-style: normal; /*Estilo da fonte do titulo*/
+    font-weight: 600; /*Peso da fonte do titulo*/
+    cursor: pointer; /*Cursor indicativo de ação*/
+    width: 100%; /*Largura completa*/
+    display: flex; /*Usa uma flexbox para alinhamento*/
+    padding: 32px 0; /*Espaçamento vertical do título*/
+    align-items: center; /*Alinha itens verticalmente ao centro*/
+    justify-content: space-between; /*Espaçamento entre os itens*/
+}
+
+.accordion p {
+    color: #324054; /*Cor do texto do conteudo*/
+    font-size: 16px; /*Tamanho da fonte do conteudo*/
+    font-style: normal; /*Estilo normal da fonte*/
+    font-weight: 400; /*Peso da fonte do conteudo*/
+    margin: 0; /*Remove as margens padrao*/
+    margin-bottom: 16px; /*Espaço abaixo de cada paragrafo*/
+}
+
+.accordion p:last-child {
+    margin-bottom: 0; /*Remove a mergem do ultimo paragrafo*/
+}
+
+.accordion[open] summary {
+    padding-bottom: 16px; /*Ajuste do espaçamento de titulo*/
+    color: #2d68fe;
+}

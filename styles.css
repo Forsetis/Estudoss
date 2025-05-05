@@ -91,6 +91,7 @@ a.destaque{
     }
 }
 
+/* Styling do View More */
 .view-more {
     margin-bottom: 56px;
 }
@@ -130,7 +131,11 @@ a.destaque{
 }
 
 .view-more .view-more__actions button {
-    color:goldenrod;
+    color:#fafafa;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 20px;
     outline: none;
     border: none;
     background-color: transparent;

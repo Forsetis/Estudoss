@@ -1,0 +1,20 @@
+button {
+    height: 48px;
+    padding: 0 32px;
+    margin: 0;
+    border: 0;
+    border-radius: 16px;
+    background-color: #2d68fe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(1.3);
+}

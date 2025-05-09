@@ -17,3 +17,9 @@ html, body {
 [hidden] {
     display: none;
 }
+
+#form {
+    padding: 40px;
+    justify-content: center;
+    margin-left: 150px;
+}

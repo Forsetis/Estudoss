@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View More</title>
+    <link rel="stylesheet" href="../Styles/components.css">
+    <link rel="stylesheet" href="../Styles/tooltip.css">
+    <link rel="stylesheet" href="../Styles/Button.css">
+    <link rel="stylesheet" href="../Styles/main.css">
+    <link rel="stylesheet" href="../Styles/modal.css">
+    <script src="../Testes/modal.js" async></script>
+    <script src="../Testes/viewmore.js" async></script>
+</head>
+<body>
+    <div class="container">
+        <h1>View More</h1>
+
+        <div class="view-more">
+            <div class="view-more__content">
+                <p>Lorem ipsum dolor sit amet,
+                    consectetura dipis cingelit.Vestibulum viverra est et suscipit venenatis. 
+                    Ut nec ultricies lectus, et dapibus nulla. Aliquam eu erat ullam corper, semper sema, 
+                    tinci dunt urna. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+            </div>
+            <div class="view-more__actions">
+                <button class="view-more-expand">Mostrar Mais</button>
+                <button class="view-more-collapse">Mostrar Menos</button>
+            </div>
+        </div>
+        
+        <!-- Componente tooltip -->
+            <h1>Tooltip</h1>
+            <div class="tooltip">Passe o cursor aqui <span class="tooltiptext">Texto da tooltip</div>
+
+        <!-- Componente accordion -->
+        <details class="accordion">
+            <!-- Depois do "accordion" e antes da seta, eu poderia colocar um open pra esse acordion
+            ja aparecer aberto -->
+            <summary>Título do Accordion</summary>
+            <p>Conteúdo escondido que aparece quando clicamos no título</p>
+        </details>
+        
+        <!-- Componente Modal -->
+        <h1>Modal</h1>
+        <button onclick="openModal('test')" id="modal">Open</button>
+    </div>
+    <div class="modal" id="test" hidden>
+        <div class="modal__backdrop" onclick="closeModal('test')"></div>
+        <div class="modal__content">
+            <div class="modal__content__header">
+                <h2>Olá, eu sou o componente modal</h2>
+            </div>
+            <div class="modal__content_body">
+                <p>Os modais concentram a atenção do usuário exclusivamente em uma tarefa ou informação por 
+                    meio de uma janela que fica no topo do conteúdo da página. Busque ser objetivo e claro
+                    na informação.
+                </p>
+            </div>
+            <div class="modal__content__footer">
+                <button onclick="closeModal('test')">Fechar Modal</button>
+            </div>
+        </div>
+    </div>
+<form action="http://127.0.0.1:5000/" method="get" id="form">
+    <label for="item-1">Item 1</label>
+    <input type="text" placeholder="Digite aqui sua informação..." name="item-1">
+    <button type="submit" id="send">Enviar</button>
+</form>
+</body>
+</html>

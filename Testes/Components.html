@@ -11,8 +11,15 @@
     <link rel="stylesheet" href="../Styles/modal.css">
     <script src="../Testes/modal.js" async></script>
     <script src="../Testes/viewmore.js" async></script>
+    <script src="../Testes/components.js" async></script>
 </head>
 <body>
+    <style>
+        form input {
+            display: block;
+            margin-bottom: 16px;
+        }
+    </style>
     <div class="container">
         <h1>View More</h1>
 
@@ -62,9 +69,20 @@
             </div>
         </div>
     </div>
-<form action="http://127.0.0.1:5000/" method="get" id="form">
-    <label for="item-1">Item 1</label>
-    <input type="text" placeholder="Digite aqui sua informação..." name="item-1">
+<form action="http://127.0.0.1:5000/" method="post" id="form">
+    <label for="item-1">Nome</label>
+    <input type="text" placeholder="Digite seu nome" name="nome">
+
+    <label for="idade">Idade</label>
+    <input type="text" name="idade" placeholder="Digite sua idade">
+
+    <label for="email">E-mail</label>
+    <input type="text" name="email" placeholder="Digite seu e-mail">
+
+    <label class="radio"><input type="radio" name="nivel" value="iniciante">Iniciante</label>
+    <label class="radio"><input type="radio" name="nivel" value="intermediario">Intermediário</label>
+    <label class="radio"><input type="radio" name="nivel" value="Avancado">Avançado</label>
+
     <button type="submit" id="send">Enviar</button>
 </form>
 </body>

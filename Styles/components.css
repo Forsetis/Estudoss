@@ -97,3 +97,109 @@ html * {
     padding-bottom: 16px; /*Ajuste do espaçamento de titulo*/
     color: #2d68fe;
 }
+
+/* Styling do Modal */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 999999;
+    display: none;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal .modal__backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal .modal__content {
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 8px;
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    max-height: 300px;
+}
+
+.modal .modal__content .modal__content__header h2 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    margin: 0;
+    color: #324054
+}
+
+.modal .modal__content .modal__content__body {
+    flex: 1;
+    overflow: auto;
+}
+
+.modal .modal__content .modal__content__body p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* Styling do tooltip */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    cursor: help;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120%;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+label.class {
+    display: block;
+}

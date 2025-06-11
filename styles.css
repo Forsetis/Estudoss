@@ -152,3 +152,11 @@ a.destaque{
 .view-more.view-more--expand .links li:nth-child(n+3) { 
     display: block; /* Mostra todos ao expandir */
 }
+
+.trace {
+border-bottom: solid 2px #555; /* Borda Inferior para separar os accordions */
+}
+
+.space {
+    margin-top: 10px;
+}

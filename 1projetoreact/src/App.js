@@ -1,10 +1,12 @@
 
+import React from 'react';
 import './App.css';
 import HelloWorld from './Components/HelloWorld';
 import LogoReact from './Components/LogoReact';
 
-function App() {
-  return (
+class App extends React.Component {
+  render() {
+    return (
     <div className="App">
       <header className="App-header">
         <LogoReact/>
@@ -12,6 +14,7 @@ function App() {
       </header>
     </div>
   );
+  }
 }
 
 export default App;

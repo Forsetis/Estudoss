@@ -2,7 +2,10 @@ function HelloWorld(props) {
     // const numeroDaTurma = props.turma
     // const numeroDePessoas = props.pessoas
     const { numeroDaTurma, numeroDePessoas } = props
-    return <p>Hello world da turma {numeroDaTurma}. Estamos em {numeroDePessoas} de pessoas nesse mundo!</p>
+    return <div>
+        <p>Hello world da turma {numeroDaTurma}.</p>
+        <p>Estamos em {numeroDePessoas} de pessoas nesse mundo!</p>
+    </div>
 }
 
 export default HelloWorld;

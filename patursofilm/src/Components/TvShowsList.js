@@ -7,7 +7,7 @@ class TvShowsList extends React.Component {
         return (
             <section>
             {
-                catalog.map(tvShow => (<TvShow key={TvShow.id} tvShow={tvShow}/>))
+                catalog.map(tvShow => (<TvShow key={TvShow.id} tvShowInfo={tvShow}/>))
             }
             </section>
         )

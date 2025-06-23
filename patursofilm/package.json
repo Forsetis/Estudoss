@@ -41,6 +41,7 @@
   "devDependencies": {
     "gh-pages": "^6.3.0",
     "prop-types": "^15.8.1"
-  }
+  },
+  "homepage": "https://forsetis.github.io/Estudoss/patursofilm/src"
 }
 

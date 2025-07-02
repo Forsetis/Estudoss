@@ -29,8 +29,7 @@ class Input extends React.Component {
                 onChange={this.handleChange}
                 value={this.state.inputValue}
                 />
-                {resultados.map((item) => (<TvShow key={item.id} tvShowInfo={item} />
-        ))}
+                {resultados.map((item) => (<TvShow key={item.id} tvShowInfo={item} />))}
             </div>
         )
     }

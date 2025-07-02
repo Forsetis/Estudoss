@@ -1,6 +1,6 @@
 import React from "react";
-import catalog from "../data";
-import TvShow from "./TvShow";
+// import catalog from "../data";
+// import TvShow from "./TvShow";
 
 class TvShowsList extends React.Component {    
     constructor(props) {

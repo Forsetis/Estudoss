@@ -1,6 +1,8 @@
 import React from "react";
-import TvShowsList from "./Components/TvShowsList";
+import Header from "./Components/Header";
 import Input from "./Components/Input";
+import Select from "./Components/Select";
+import TvShowsList from "./Components/TvShowsList";
 import InputForm from "./Components/InputForm";
 import Button from "./Components/Button";
 
@@ -13,9 +15,11 @@ class App extends React.Component{
       password:'',
       showEmail: false,
       isRequiredInput: true,
+      job: '',
     }
     // this.handleChangeEmail = this.handleChangeEmail.bind(this)
     // this.handleChangePassword = this.handleChangePassword.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
   // handleChangeEmail(e) {
@@ -32,13 +36,10 @@ class App extends React.Component{
 
   onSubmitForm = (e) => {
     e.preventDefault();
-    this.setState({
-      showEmail: true
-    })
-    console.log('Clicou')
+    alert('Cadastrado com sucesso');
   }
+  
   handleChange = (e) => {
-    // console.log(e.target.name)
     this.setState({
       [e.target.name]: e.target.value,
       showEmail: false,
@@ -46,13 +47,14 @@ class App extends React.Component{
   }
 
   render(){
-    const { email, password, showEmail, isRequiredInput } = this.state;
+    const { email, password, profession, showEmail, isRequiredInput } = this.state;
     console.log('email:', email);
     console.log('password:', password);
     return(
       <main>
         <h1>Paturso Filmes</h1>
         <h2>Para logar em nosso site para receber a newsletter de filmes, preencha abaixo com o login e senha</h2>
+        <Header title="Cadastro de Usuário"/>
         <form onSubmit={this.onSubmitForm}>
           <InputForm 
             inputLabel="Email"
@@ -62,12 +64,26 @@ class App extends React.Component{
             onChangeInput={this.handleChange}
             />
             <InputForm 
-            inputLabel="Senha"
-            inputType="password"
-            inputName="password"
-            inputValue={password}
-            isRequired={isRequiredInput}
-            onChangeInput={this.handleChange}
+              inputLabel="Senha"
+              inputType="password"
+              inputName="password"
+              inputValue={password}
+              isRequiredInput
+              onChangeInput={this.handleChange}
+            />
+            <Select 
+            name='job' 
+            label='Profissao'
+            value={this.state.job} 
+            handleChange={this.handleChange}
+            options={['Dev', 'Estudante', 'Outro']}/>
+            <InputForm 
+              inputLabel="Comentário"
+              inputType="text"
+              inputName="coment"
+              inputValue={profession}
+              isRequired={isRequiredInput}
+              onChangeInput={this.handleChange}
             />
           <Button 
           typeButton="submit"

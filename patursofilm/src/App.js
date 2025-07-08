@@ -47,7 +47,7 @@ class App extends React.Component{
   }
 
   render(){
-    const { email, password, profession, showEmail, isRequiredInput } = this.state;
+    const { email, password, profession, showEmail } = this.state;
     console.log('email:', email);
     console.log('password:', password);
     return(
@@ -57,18 +57,19 @@ class App extends React.Component{
         <Header title="Cadastro de Usuário"/>
         <form onSubmit={this.onSubmitForm}>
           <InputForm 
-            inputLabel="Email"
+            inputLabel="Email*"
             inputType="email"
             inputName="email"
             inputValue={email}
+            isRequired={true}
             onChangeInput={this.handleChange}
             />
             <InputForm 
-              inputLabel="Senha"
+              inputLabel="Senha*"
               inputType="password"
               inputName="password"
               inputValue={password}
-              isRequiredInput
+              isRequired={true}
               onChangeInput={this.handleChange}
             />
             <Select 
@@ -82,7 +83,6 @@ class App extends React.Component{
               inputType="text"
               inputName="coment"
               inputValue={profession}
-              isRequired={isRequiredInput}
               onChangeInput={this.handleChange}
             />
           <Button 

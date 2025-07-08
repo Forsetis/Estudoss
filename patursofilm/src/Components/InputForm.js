@@ -11,7 +11,7 @@ class InputForm extends React.Component {
                 name={inputName}
                 value={inputValue}
                 onChange={onChangeInput}
-                isRiqueredInput={isRiquered}
+                required={isRiquered}
                 />
             </label>
         );

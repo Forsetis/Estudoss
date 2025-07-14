@@ -1,5 +1,7 @@
 html, body {
     font-family: sans-serif;
+    background-color: #242424;
+    color: #bfbfbf;
 }
 
 html * {
@@ -20,14 +22,15 @@ html * {
 }
 
 .view-more .view-more__content {
-    max-height: 300px;
+    max-height: 180px;
     overflow: hidden;
     margin-bottom: 8px;
     position: relative;
+    /* transition: max-height 0.5s ease-in-out; */
 }
 
-.view-more .view-more--expand .view-more__content {
-    max-height: unset;
+.view-more.view-more--expand .view-more__content {
+    max-height: 999px;
 }
 
 .view-more:not(.view-more--expand) .view-more__content::after {
@@ -35,8 +38,9 @@ html * {
     bottom: 0;
     position: absolute;
     width: 100%;
-    height: 80px;
-    background: linear-gradient(0deg, #fff 33.08%, rgba(255, 255, 255, 0.00) 69.54%);
+    height: 120px;
+    background: linear-gradient(0deg, #bfbfbf 16.08%, rgba(255, 255, 255, 0.00) 74.54%);
+    transition: opacity 0.5s ease-in-out;
 }
 
 .view-more:not(.view-more--expand) .view-more-collapse {
@@ -53,6 +57,10 @@ html * {
 
 .view-more .view-more__actions button {
     color:goldenrod;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 20px;
     outline: none;
     border: none;
     background-color: transparent;
@@ -68,7 +76,7 @@ html * {
 }
 
 .accordion summary {
-    color: #324054; /*Cor do titulo de accordion fechado*/
+    color: #bfbfbf; /*Cor do titulo de accordion fechado*/
     font-size: 20px; /*Tamanho da fonte*/
     font-style: normal; /*Estilo da fonte do titulo*/
     font-weight: 600; /*Peso da fonte do titulo*/
@@ -81,7 +89,7 @@ html * {
 }
 
 .accordion p {
-    color: #324054; /*Cor do texto do conteudo*/
+    color: #bfbfbf; /*Cor do texto do conteudo*/
     font-size: 16px; /*Tamanho da fonte do conteudo*/
     font-style: normal; /*Estilo normal da fonte*/
     font-weight: 400; /*Peso da fonte do conteudo*/
@@ -95,7 +103,7 @@ html * {
 
 .accordion[open] summary {
     padding-bottom: 16px; /*Ajuste do espaçamento de titulo*/
-    color: #2d68fe;
+    color: goldenrod;
 }
 
 /* Styling do Modal */

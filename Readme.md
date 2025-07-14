@@ -11,18 +11,36 @@ e dou wrap em todo o conteudo abaixo do return (incluindo div ou section) com a 
 
 
 
-Como dar deploy em react:
+Como dar deploy em react no CREATE-REACT-APP:
 
 dentro da pasta do app react no bash, dar um:
 
 npm run build
-cp -r build/* ../meu-react-app-master/
+cp -r build/* ../meu-react-app-master/ (aqui é a pasta raiz do meu app, ex, patursoFilm)
+
+DEPLOY NO VITE:
+npm run build
+cp -r dist/* ../meu-react-app (aqui é a pasta raiz do meu app, ex:CalcValidade)
 
 e no package.json:
 
-adicionar uma propriedade:
+adicionar uma propriedade (CREATE-REACT-APP):
 "homepage": "https://forsetis.github.io/Estudoss/patursofilm/"
 
-e na parte de scripts adicionar o seguinte:
+NO VITE: "homepage": "./"
+
+e na parte de scripts adicionar o seguinte(CREATE-REACT-APP):
 "predeploy": "npm run build",
 "deploy": "gh-pages -d build"
+
+
+NO VITE:
+
+"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "lint": "eslint .",
+  "preview": "vite preview",
+  "deploy": "npm run build && cp -r dist/* ../CalcValidade/",
+  "predeploy": "npm run build"
+  },

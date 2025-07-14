@@ -4,14 +4,14 @@ button#modal {
     margin: 0;
     border: 0;
     border-radius: 16px;
-    background-color: #2d68fe;
+    background-color: goldenrod;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    color: #fff;
+    color: #242424;
     cursor: pointer;
 }
 

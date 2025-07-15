@@ -1,6 +1,7 @@
 import React from 'react';
 import RemainingTooltip from './RemainingTooltip';
-
+import Button from './Button';
+import './Button.css';
 class ProductItem extends React.Component {
   render() {
     const { product, validData, onDelete } = this.props;
@@ -8,7 +9,13 @@ class ProductItem extends React.Component {
     return (
       <li>
         {product} — <RemainingTooltip validDate = {validData}/>
-        <button className='button' onClick={onDelete}> x </button>
+        <Button
+        typeButton="button"
+        labelButton="x"
+        onClickButton={onDelete}
+        className="button--delete"
+        />
+        {/* <button className='button' onClick={onDelete}> x </button> */}
       </li>
     );
   }

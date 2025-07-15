@@ -59,7 +59,6 @@ class App extends React.Component {
           onChangeInput={this.handleChange}
           onSubmitForm={this.onSubmitForm}
         />
-
       </div>
     );
   }

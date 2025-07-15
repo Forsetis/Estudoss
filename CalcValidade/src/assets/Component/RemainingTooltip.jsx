@@ -37,7 +37,7 @@ class RemainingTooltip extends React.Component {
     if (diffDays < 0) return "#f5c6cb";
     if (diffDays <= 60) return "#ffcc80";
 
-    return "transparent";
+    return "#a8d5ba";
   }
 
   render() {

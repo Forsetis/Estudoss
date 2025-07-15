@@ -1,0 +1,35 @@
+button {
+  padding: 0.2em 0.5em;
+  margin-left: 10px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: goldenrod;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.button--delete {
+  padding: 0.2em 0.5em;
+  margin-left: 10px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-size: 0.9em;
+  background-color: #1a1a1a;
+  border-color: #880303;
+}
+
+.button--delete:hover {
+  background-color: #880303;
+  border-color: #880303;
+  color: #fff;
+}

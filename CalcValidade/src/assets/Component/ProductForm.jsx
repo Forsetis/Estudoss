@@ -27,7 +27,6 @@ class ProductForm extends React.Component {
         <Button
           typeButton="submit"
           labelButton="Cadastrar"
-          className="button"
         />
       </form>
     );

@@ -1,9 +1,34 @@
 import React from 'react';
 import ProductForm from './assets/Component/ProductForm.JSX';
 import ProductList from './assets/Component/ProductList'
+// import ProdutosFiltrados from './assets/Component/Filtrodevalidade/ProdutosFiltrados';
+import FiltroValidade from './assets/Component/Filtrodevalidade/FiltroValidade';
 import './app.css'
 
 class App extends React.Component {
+  filterProducts = () => {
+  const { products, filtroValidade } = this.state;
+  const hoje = new Date();
+  const margemDias = 7;
+  const margem = new Date();
+  margem.setDate(hoje.getDate() + margemDias);
+
+  return products.filter(produto => {
+    const validade = new Date(produto.validData);
+
+    if (filtroValidade === 'vencidos') {
+      return validade < hoje;
+    }
+    if (filtroValidade === 'prestes') {
+      return validade >= hoje && validade <= margem;
+    }
+    if (filtroValidade === 'validos') {
+      return validade > margem;
+    }
+
+    return true; // 'todos'
+  });
+};
   constructor() {
     super();
     const savedProducts = JSON.parse(localStorage.getItem('products')) || [];
@@ -12,12 +37,17 @@ class App extends React.Component {
       product: '',
       validData: '',
       products: savedProducts,
+      filtroValidade:'todos'
     };
   }
 
   handleChange = (e) => {
     const { name, value } = e.target;
     this.setState({ [name]: value });
+  };
+
+  handleFiltroValidade = (modo) => {
+  this.setState({ filtroValidade: modo });
   };
 
   onSubmitForm = (e) => {
@@ -42,17 +72,19 @@ class App extends React.Component {
   };
 
   render() {
-    const { product, validData, products } = this.state;
+    const { product, validData } = this.state;
 
     return (
       <div>
         <h1>Mostrador de validade de produtos</h1>
         <h2>Cadastre produtos com suas datas de validade para monitorar facilmente</h2>
 
+        <FiltroValidade onChangeFiltro={this.handleFiltroValidade}/>
         <ProductList
-          products={products}
+          products={this.filterProducts()}
           onDeleteProduct={this.handleDelete}
         />
+        {/* <ProdutosFiltrados/> */}
         <ProductForm
           product={product}
           validData={validData}

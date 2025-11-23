@@ -1,7 +1,7 @@
 import React from 'react';
 import ProductForm from './assets/Component/ProductForm.JSX';
 import ProductList from './assets/Component/ProductList'
-// import ProdutosFiltrados from './assets/Component/Filtrodevalidade/ProdutosFiltrados';
+import ProdutosFiltrados from './assets/Component/Filtrodevalidade/ProdutosFiltrados';
 import FiltroValidade from './assets/Component/Filtrodevalidade/FiltroValidade';
 import './app.css'
 

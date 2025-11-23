@@ -17,8 +17,8 @@ to do list:
 🚀 Funcionalidades adicionais
 - 🔔 Notificações de validade próxima
 Implementar alertas para produtos que vencem em até X dias.
-- 📅 Filtro por data de validade
-Adicionar opções para filtrar os produtos por “vencidos”, “prestes a vencer”, ou “válidos”.
+<!-- - 📅 Filtro por data de validade
+Adicionar opções para filtrar os produtos por “vencidos”, “prestes a vencer”, ou “válidos”. -->
 - 🔍 Barra de pesquisa
 Permitir que o usuário busque produtos pelo nome.
 - 📤 Exportar lista

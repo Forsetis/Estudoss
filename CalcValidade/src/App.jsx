@@ -9,7 +9,7 @@ class App extends React.Component {
   filterProducts = () => {
   const { products, filtroValidade } = this.state;
   const hoje = new Date();
-  const margemDias = 7;
+  const margemDias = 30;
   const margem = new Date();
   margem.setDate(hoje.getDate() + margemDias);
 

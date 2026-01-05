@@ -3,7 +3,7 @@
 // src/hooks/useFiltroValidade.js
 import { useMemo } from 'react';
 
-export function useFiltroValidade(produtos, modoFiltro, diasMargem = 14) {
+export function useFiltroValidade(produtos, modoFiltro, diasMargem = 30) {
   
 console.log('console esta sendo chamado:');
   return useMemo(() => {

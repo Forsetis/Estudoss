@@ -35,9 +35,10 @@ class RemainingTooltip extends React.Component {
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 
     if (diffDays < 0) return "#f5c6cb";
-    if (diffDays <= 60) return "#ffcc80";
+    if (diffDays <= 30) return "#ffcc80";
+    if (diffDays >= 30) return "#a8d5ba";
 
-    return "#a8d5ba";
+    // return "#a8d5ba";
   }
 
   render() {

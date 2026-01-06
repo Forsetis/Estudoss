@@ -1,0 +1,52 @@
+/* App.css */
+
+html, body, #root {
+  height: 100%; 
+  margin: 0; 
+  background-color: #282c34; /* fundo padrão do CRA */ }
+
+.App {
+  min-height: 100%;
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  color: white;
+}
+
+h1 {
+  color: #61dafb;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 8px;
+  margin: 8px;
+  border-radius: 5px;
+  border: 1px solid #61dafb;
+  outline: none;
+}
+
+button {
+  background-color: goldenrod;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+}
+
+button:hover {
+  background-color: goldenrod; /* tom mais escuro para hover */
+}
+
+.Result {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}

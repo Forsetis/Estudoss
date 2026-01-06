@@ -1,0 +1,48 @@
+/* CircleSelector.css */
+.circle-selector {
+  margin-top: 15px;
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+}
+
+.circle-selector p {
+  margin-bottom: 10px;
+  color: #61dafb;
+  font-weight: bold;
+}
+
+.circle-option {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.circle-option input[type="radio"] {
+  display: none; /* escondemos o radio padrão */
+}
+
+.circle-option label {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  background-color: #282c34;
+  border: 2px solid #61dafb;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.circle-option input[type="radio"]:checked + label {
+  background-color: #61dafb;
+  color: #282c34;
+  font-weight: bold;
+}
+
+.circle-option label:hover {
+  background-color: #21a1f1;
+  color: #282c34;
+}

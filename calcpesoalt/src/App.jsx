@@ -29,11 +29,11 @@ function App() {
     if (sexo === "homem" && etnia === "branco") {
       peso = (circBraco * 3.21) + (alturaJoelho * 1.19) - 86.82;
     } else if (sexo === "homem" && etnia === "preto") {
-      peso = (circBraco * 3.21) + (alturaJoelho * 1.9) - 83.72;
+      peso = (circBraco * 3.14) + (alturaJoelho * 1.09) - 83.72;
     } else if (sexo === "mulher" && etnia === "branco") {
-      peso = (circBraco * 2.81) + (alturaJoelho * 1.1) - 66.04;
+      peso = (circBraco * 2.81) + (alturaJoelho * 1.01) - 66.04;
     } else {
-      peso = (circBraco * 1.24) + (alturaJoelho * 2.81) - 82.48;
+      peso = (circBraco * 2.81) + (alturaJoelho * 1.24) - 82.48;
     }
 
     setResultado({ altura: altura.toFixed(2), peso: peso.toFixed(2) });

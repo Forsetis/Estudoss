@@ -1,0 +1,51 @@
+body {
+    background-color: #500085;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #500085;
+    padding: 1rem;
+    font-size: 30px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(0, 255, 221);
+    font-weight: bold;
+}
+
+.enunciado {
+    margin-left: 20px;
+    background-color: #500085;
+    color: rgb(0, 255, 221);
+}
+
+.exemplos {
+    color: rgb(0, 255, 221);
+}
+
+.exemplos h1 {
+    margin-left: 20px;
+}
+
+.exemplos img {
+    width: 250px;
+    height: 250px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.pacotes {
+    color: rgb(0, 255, 221);
+}
+
+.pacotes a {
+    color: rgb(0, 255, 221);
+}

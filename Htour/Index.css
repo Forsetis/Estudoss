@@ -289,6 +289,39 @@ body {
         max-width: 280px;
         padding: 12px;
     }
+    .introTitle {
+        padding: 30px 15px;
+    }
+    .introTitle h1 {
+        font-size: 26px;
+    }
+    .introTitle p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    .exemplos h1 {
+        margin-left: 10px;
+        font-size: 24px;
+        text-align: center;
+    }
+    .exemplos .grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-top: 30px;
+    }
+    .exemplos .grid .box:nth-child(1),
+    .exemplos .grid .box:nth-child(2),
+    .exemplos .grid .box:nth-child(3),
+    .exemplos .grid .box:nth-child(4) {
+        grid-column: auto !important;
+        grid-row: auto !important;
+    }
+    .exemplos img {
+        width: 180px;
+        height: 180px;
+    }
 }
 
 /*.efeito-clique {

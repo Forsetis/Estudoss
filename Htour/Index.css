@@ -283,6 +283,9 @@ body {
     .package-info .side-text {
         font-size: 22px;
         margin-bottom: 5px;
+        width: 100%;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
     .package-info .btn-ver {
         width: 80%;
@@ -322,6 +325,11 @@ body {
         width: 180px;
         height: 180px;
     }
+}
+
+html body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 /*.efeito-clique {

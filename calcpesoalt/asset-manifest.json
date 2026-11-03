@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Estudoss/static/css/main.d2028a72.css",
+    "main.js": "/Estudoss/static/js/main.825b3745.js",
+    "static/js/453.9ab4a879.chunk.js": "/Estudoss/static/js/453.9ab4a879.chunk.js",
+    "index.html": "/Estudoss/index.html",
+    "main.d2028a72.css.map": "/Estudoss/static/css/main.d2028a72.css.map",
+    "main.825b3745.js.map": "/Estudoss/static/js/main.825b3745.js.map",
+    "453.9ab4a879.chunk.js.map": "/Estudoss/static/js/453.9ab4a879.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d2028a72.css",
+    "static/js/main.825b3745.js"
+  ]
+}

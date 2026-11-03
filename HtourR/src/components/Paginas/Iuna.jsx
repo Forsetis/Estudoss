@@ -16,7 +16,7 @@ function Iuna({ aoVoltar }) {
         <h2>Poço das Antas</h2>
         <div className="block-content">
           <div className="resizing">
-            <img src="/src/Antas.jpg" alt="Poço das Antas" onClick={() => setFotoAmpliada ("/src/Antas.jpg")}/>
+            <img src="/Antas.jpg" alt="Poço das Antas" onClick={() => setFotoAmpliada ("/src/Antas.jpg")}/>
           </div>
           <p className="side-text">Chega a ser difícil elencar qual das cachoeiras e poços é considerado o melhor, todos aqui publicados estarão em pé de igualdade. Logo, o Poço das Antas por exemplo, é um poço de águas cristalinas esverdeadas, ótimo para recarregar as energias.</p>
         </div>
@@ -24,7 +24,7 @@ function Iuna({ aoVoltar }) {
         <h2>Poço do Egito</h2>
         <div className="block-content">
           <div className="resizing">
-            <img src="/src/Egito.jpg" alt="Poço do Egito" onClick={() => setFotoAmpliada("/src/Egito.jpg")}/>
+            <img src="/Egito.jpg" alt="Poço do Egito" onClick={() => setFotoAmpliada("/src/Egito.jpg")}/>
           </div>
           <p className="side-text">Também um corpo d'água incrível, com águas cristalinas, e toda uma estrutura pra receber os visitantes, desde passarelas de madeira pra chegar mais facilmente ao poço bem como estrutura de bar e música ao vivo aos finais de semana pra quem curte mais essa pegada.</p>
         </div>
@@ -32,7 +32,7 @@ function Iuna({ aoVoltar }) {
         <h2>Cachoeira do Rogério</h2>
         <div className="block-content">
           <div className="resizing">
-            <img src="/src/cachoeira-do-rogerio.webp" alt="Cachoeira do Rogério" onClick={() => setFotoAmpliada("/src/cachoeira-do-rogerio.webp")}/>
+            <img src="/cachoeira-do-rogerio.webp" alt="Cachoeira do Rogério" onClick={() => setFotoAmpliada("/src/cachoeira-do-rogerio.webp")}/>
           </div>
           <p className="side-text">Outra opção que temos é a cachoeira do Rogério, "apenas mais um" corpo d'água de águas cristalinas.</p>
         </div>

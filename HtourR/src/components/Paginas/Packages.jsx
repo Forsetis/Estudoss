@@ -10,7 +10,7 @@ function Packages ({setTelaAtiva}) {
         <div className="enunciado">
             <div className="block-content">
                 <div className="resizing">
-                    <img src="/src/Casa_da_Pirâmide_em_São_Tome_das_Letras.jpg" alt="São_Tomé_das_Letras" data-click-effect/>
+                    <img src="/Casa_da_Pirâmide_em_São_Tome_das_Letras.jpg" alt="São_Tomé_das_Letras" data-click-effect/>
                 </div>
                 <div className="package-info">
                     <h1 className="side-text">Pacote São Tomé das letras.</h1>
@@ -19,7 +19,7 @@ function Packages ({setTelaAtiva}) {
             </div>
             <div className="block-content">
                 <div className="resizing">
-                    <img src="src/Santiago.jpg" alt="Santiago" data-click-effect/>
+                    <img src="/Santiago.jpg" alt="Santiago" data-click-effect/>
                 </div>
                 <div className="package-info">
                     <h1 className="side-text">Pacote Santiago.</h1>
@@ -28,7 +28,7 @@ function Packages ({setTelaAtiva}) {
             </div>
             <div className="block-content">
                 <div className="resizing">
-                    <img src="/src/portal-topo.webp" alt="Marataízes" data-click-effect/>
+                    <img src="/portal-topo.webp" alt="Marataízes" data-click-effect/>
                 </div>
                 <div className="package-info">
                     <h1 className="side-text">Pacote Marataízes.</h1>
@@ -37,7 +37,7 @@ function Packages ({setTelaAtiva}) {
             </div>
             <div className="block-content">
                 <div className="resizing">
-                    <img src="/src/Egito.jpg" alt="Iúna" data-click-effect/>
+                    <img src="/Egito.jpg" alt="Iúna" data-click-effect/>
                 </div>
                 <div className="package-info">
                     <h1 className="side-text">Pacote Iúna.</h1>

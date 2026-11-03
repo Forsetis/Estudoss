@@ -96,28 +96,28 @@ return (
         <div className="grid">
           <div className="box">
             <img 
-                src="/src/Casa_da_Pirâmide_em_São_Tome_das_Letras.jpg" 
+                src="/Casa_da_Pirâmide_em_São_Tome_das_Letras.jpg" 
                 alt="Piramide de São Thomé das Letras" 
                 onClick={() => lidarComCliqueFoto('saotome')}
               />
           </div>
           <div className="box">
               <img 
-                src="/src/portal-topo.webp" 
+                src="/portal-topo.webp" 
                 alt="Vista aérea do portal do camping" 
                 onClick={() => lidarComCliqueFoto('marataizes')}
               />
             </div>
             <div className="box">
               <img 
-                src="/src/iuna_poco do egito_1_tadeu bianconi.jpg" 
+                src="/iuna_poco do egito_1_tadeu bianconi.jpg" 
                 alt="Foto para um dos poços de Iúna" 
                 onClick={() => lidarComCliqueFoto('iuna')}
               />
             </div>
             <div className="box">
               <img 
-                src="/src/Santiago.jpg" 
+                src="/Santiago.jpg" 
                 alt="Foto da cidade de Santiago do Chile" 
                 onClick={() => lidarComCliqueFoto('santiago')}
               />

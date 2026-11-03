@@ -9,31 +9,34 @@ function App() {
   const [idade, setIdade] = useState("");
   const [alturaJoelho, setAlturaJoelho] = useState("");
   const [circBraco, setCircBraco] = useState("");
-  const [sexo, setSexo] = useState("homem");
-  const [etnia, setEtnia] = useState("branco");
+  const [sexo, setSexo] = useState("Homem");
+  const [etnia, setEtnia] = useState("Branco");
   const [resultado, setResultado] = useState(null);
 
   const calcular = () => {
+    const numIdade = parseFloat(idade) || 0;
+    const numAlturaJoelho = parseFloat(alturaJoelho) || 0;
+    const numCircbraco = parseFloat(circBraco) || 0;
+
     let altura = 0;
-    let peso = 0;
-    let idade = 0;
+    let peso = 0
 
     // Fórmula de altura pelo joelho
-    if (sexo === "homem") {
-      altura = 60.65 + (2.04 * alturaJoelho);
+    if (sexo === "Homem") {
+      altura = 60.65 + (2.04 * numAlturaJoelho);
     } else {
-      altura = 84.88 + (1.83 * alturaJoelho) + (0,24* idade);
+      altura = 84.88 + (1.83 * numAlturaJoelho) - (0.24* numIdade);
     }
 
     // Fórmula de peso pelo braço + joelho
-    if (sexo === "homem" && etnia === "branco") {
-      peso = (circBraco * 3.21) + (alturaJoelho * 1.19) - 86.82;
-    } else if (sexo === "homem" && etnia === "preto") {
-      peso = (circBraco * 3.14) + (alturaJoelho * 1.09) - 83.72;
-    } else if (sexo === "mulher" && etnia === "branco") {
-      peso = (circBraco * 2.81) + (alturaJoelho * 1.01) - 66.04;
-    } else {
-      peso = (circBraco * 2.81) + (alturaJoelho * 1.24) - 82.48;
+    if (sexo === "Homem" && etnia === "Branco") {
+      peso = (numCircbraco * 3.21) + (numAlturaJoelho * 1.19) - 86.82;
+    } else if (sexo === "Homem" && etnia === "Preto") {
+      peso = (numCircbraco * 3.14) + (numAlturaJoelho * 1.09) - 83.72;
+    } else if (sexo === "Mulher" && etnia === "Branco") {
+      peso = (numCircbraco * 2.81) + (numAlturaJoelho * 1.01) - 66.04;
+    } else if (sexo === "Mulher" && etnia === "Preta") {
+      peso = (numCircbraco * 2.81) + (numAlturaJoelho * 1.24) - 82.48;
     }
 
     setResultado({ altura: altura.toFixed(2), peso: peso.toFixed(2) });

@@ -1,0 +1,19 @@
+.btn-ver {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #80FFE8;
+    border: 2px solid #80FFE8;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.btn-ver:hover {
+    background-color: #80FFE8;
+    color: #2A1B35;
+    cursor: pointer;
+}

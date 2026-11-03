@@ -9,7 +9,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "npm run build && xcopy /E /Y /I dist\\* .\\",
+    "deploy": "npm run build && xcopy /E /Y dist\\* ..\\HtourR\\",
   "predeploy": "npm run build"
   },
   "dependencies": {
